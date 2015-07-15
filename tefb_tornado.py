@@ -26,9 +26,9 @@ app = tornado.web.Application((
 def main():
     server = tornado.httpserver.HTTPServer(app)
     if os.name == 'nt' or ('dofork' not in sys.argv):
-        server.listen(8080)
+        server.listen(8085)
     else:
-        server.bind(8080)
+        server.bind(8085)
         server.start(0)
     tornado.ioloop.IOLoop.instance().start()
 

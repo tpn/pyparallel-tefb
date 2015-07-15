@@ -20,7 +20,7 @@ def plaintext():
     return response
 
 def main():
-    app.run(host=ipaddr, port=8080)
+    app.run(host=ipaddr, port=8084)
 
 if __name__ == '__main__':
     main()
